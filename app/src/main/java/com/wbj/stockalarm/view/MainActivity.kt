@@ -1,8 +1,9 @@
-package com.wbj.stockalarm
+package com.wbj.stockalarm.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
+import com.wbj.stockalarm.R
 import com.wbj.stockalarm.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

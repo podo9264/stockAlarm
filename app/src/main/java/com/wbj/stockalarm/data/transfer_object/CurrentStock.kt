@@ -1,5 +1,5 @@
 package com.wbj.stockalarm.data.transfer_object
 
-class CurrentStock(code: Int) : Stock(code){
-    var mCurrentPrize = 0
+open class CurrentStock(code: Int) : Stock(code){
+    var mCurrentPrize:Int = 0
 }

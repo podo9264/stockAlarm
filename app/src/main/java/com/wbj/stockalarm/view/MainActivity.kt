@@ -21,5 +21,7 @@ class MainActivity : AppCompatActivity() {
         mBinding.rvStock.adapter = mAdapter
         mBinding.rvStock.layoutManager = LinearLayoutManager(baseContext)
         mBinding.rvStock.setHasFixedSize(true)
+
+
     }
 }

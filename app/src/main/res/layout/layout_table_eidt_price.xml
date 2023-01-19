@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.50"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_3"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="first"
+            android:gravity="left"
+            app:layout_constraintTop_toTopOf="@id/tv_first_start_price"
+            app:layout_constraintBottom_toBottomOf="@id/tv_first_start_price"
+            app:layout_constraintRight_toLeftOf="@id/gl_1"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <EditText
+            android:id="@+id/tv_first_start_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0000"
+            android:gravity="left"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/gl_2"
+            app:layout_constraintLeft_toRightOf="@id/gl_1"/>
+
+        <EditText
+            android:id="@+id/tv_first_end_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0000"
+            android:gravity="left"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/gl_3"
+            app:layout_constraintLeft_toRightOf="@id/gl_2"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="second"
+            android:gravity="left"
+            app:layout_constraintTop_toTopOf="@id/tv_second_start_price"
+            app:layout_constraintBottom_toBottomOf="@id/tv_second_start_price"
+            app:layout_constraintRight_toLeftOf="@id/gl_1"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <EditText
+            android:id="@+id/tv_second_start_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0000"
+            android:gravity="left"
+            app:layout_constraintTop_toBottomOf="@id/tv_first_start_price"
+            app:layout_constraintRight_toLeftOf="@id/gl_2"
+            app:layout_constraintLeft_toRightOf="@id/gl_1"/>
+
+        <EditText
+            android:id="@+id/tv_second_end_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0000"
+            android:gravity="left"
+            app:layout_constraintTop_toBottomOf="@id/tv_first_start_price"
+            app:layout_constraintRight_toLeftOf="@id/gl_3"
+            app:layout_constraintLeft_toRightOf="@id/gl_2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="end"
+            android:gravity="left"
+            app:layout_constraintTop_toTopOf="@id/tv_last_purchase_price"
+            app:layout_constraintRight_toLeftOf="@id/gl_1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/tv_last_purchase_price"/>
+
+        <EditText
+            android:id="@+id/tv_last_purchase_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0000"
+            android:gravity="left"
+            app:layout_constraintTop_toBottomOf="@id/tv_second_start_price"
+            app:layout_constraintRight_toLeftOf="@id/gl_2"
+            app:layout_constraintLeft_toRightOf="@id/gl_1"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
